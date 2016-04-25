@@ -1,0 +1,190 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'react-addons-pure-render-mixin@^15.0.0',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'react-addons-pure-render-mixin@^15.0.0', null ]
+6 verbose cache add name=undefined spec="react-addons-pure-render-mixin@^15.0.0" args=["react-addons-pure-render-mixin@^15.0.0",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'react-addons-pure-render-mixin@^15.0.0',
+7 verbose parsed url   path: 'react-addons-pure-render-mixin@^15.0.0',
+7 verbose parsed url   href: 'react-addons-pure-render-mixin@^15.0.0' }
+8 verbose cache add name="react-addons-pure-render-mixin" spec="^15.0.0" args=["react-addons-pure-render-mixin","^15.0.0"]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: '^15.0.0',
+9 verbose parsed url   path: '^15.0.0',
+9 verbose parsed url   href: '^15.0.0' }
+10 verbose addNamed [ 'react-addons-pure-render-mixin', '^15.0.0' ]
+11 verbose addNamed [ null, '>=15.0.0-0 <16.0.0-0' ]
+12 silly lockFile 8844d43e--addons-pure-render-mixin-15-0-0 react-addons-pure-render-mixin@^15.0.0
+13 verbose lock react-addons-pure-render-mixin@^15.0.0 /Users/thehecht/.npm/8844d43e--addons-pure-render-mixin-15-0-0.lock
+14 silly addNameRange { name: 'react-addons-pure-render-mixin',
+14 silly addNameRange   range: '>=15.0.0-0 <16.0.0-0',
+14 silly addNameRange   hasData: false }
+15 verbose request where is /react-addons-pure-render-mixin
+16 verbose request registry https://registry.npmjs.org/
+17 verbose request id 3e77e86fdef4ef7b
+18 verbose url raw /react-addons-pure-render-mixin
+19 verbose url resolving [ 'https://registry.npmjs.org/',
+19 verbose url resolving   './react-addons-pure-render-mixin' ]
+20 verbose url resolved https://registry.npmjs.org/react-addons-pure-render-mixin
+21 verbose request where is https://registry.npmjs.org/react-addons-pure-render-mixin
+22 info trying registry request attempt 1 at 11:39:06
+23 verbose etag "7GGT7G26V9NEP3CVRC093L8EJ"
+24 http GET https://registry.npmjs.org/react-addons-pure-render-mixin
+25 http 200 https://registry.npmjs.org/react-addons-pure-render-mixin
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"2PWRK7Y9ADHUAE8R1CTH3FYUR"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=300',
+26 silly registry.get     'content-length': '25369',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Mon, 25 Apr 2016 14:39:08 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '289',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-iad2134-IAD',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1461595148.812806,VS0,VE0',
+26 silly registry.get     vary: 'Accept-Encoding' } ]
+27 silly addNameRange number 2 { name: 'react-addons-pure-render-mixin',
+27 silly addNameRange   range: '>=15.0.0-0 <16.0.0-0',
+27 silly addNameRange   hasData: true }
+28 silly addNameRange versions [ 'react-addons-pure-render-mixin',
+28 silly addNameRange   [ '0.14.0-beta1',
+28 silly addNameRange     '0.14.0-beta2',
+28 silly addNameRange     '0.14.0-beta3',
+28 silly addNameRange     '0.14.0-rc1',
+28 silly addNameRange     '0.14.0',
+28 silly addNameRange     '0.14.1',
+28 silly addNameRange     '0.14.2',
+28 silly addNameRange     '0.14.3',
+28 silly addNameRange     '0.14.4',
+28 silly addNameRange     '0.14.5',
+28 silly addNameRange     '0.14.6',
+28 silly addNameRange     '0.15.0-alpha.1',
+28 silly addNameRange     '0.14.7',
+28 silly addNameRange     '15.0.0-rc.1',
+28 silly addNameRange     '15.0.0-rc.2',
+28 silly addNameRange     '0.14.8',
+28 silly addNameRange     '15.0.0',
+28 silly addNameRange     '15.0.1',
+28 silly addNameRange     '15.0.2-alpha.1',
+28 silly addNameRange     '15.0.2-alpha.2' ] ]
+29 verbose addNamed [ 'react-addons-pure-render-mixin', '15.0.1' ]
+30 verbose addNamed [ '15.0.1', '15.0.1' ]
+31 silly lockFile 44296f87--addons-pure-render-mixin-15-0-1 react-addons-pure-render-mixin@15.0.1
+32 verbose lock react-addons-pure-render-mixin@15.0.1 /Users/thehecht/.npm/44296f87--addons-pure-render-mixin-15-0-1.lock
+33 silly lockFile e9b8c3b8-ons-pure-render-mixin-15-0-1-tgz https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.0.1.tgz
+34 verbose lock https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.0.1.tgz /Users/thehecht/.npm/e9b8c3b8-ons-pure-render-mixin-15-0-1-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.0.1.tgz',
+35 verbose addRemoteTarball   'fb106f4537e2803ca7cea2c55cac9f4a2dcb1f53' ]
+36 info retry fetch attempt 1 at 11:39:07
+37 verbose fetch to= /var/folders/29/hwgz051n5l3036316tq7xv3m0000gn/T/npm-3704-jTiWV8m3/registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.0.1.tgz
+38 http GET https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.0.1.tgz
+39 http 200 https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.0.1.tgz
+40 silly lockFile e9b8c3b8-ons-pure-render-mixin-15-0-1-tgz https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.0.1.tgz
+41 silly lockFile e9b8c3b8-ons-pure-render-mixin-15-0-1-tgz https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.0.1.tgz
+42 silly lockFile 44296f87--addons-pure-render-mixin-15-0-1 react-addons-pure-render-mixin@15.0.1
+43 silly lockFile 44296f87--addons-pure-render-mixin-15-0-1 react-addons-pure-render-mixin@15.0.1
+44 silly lockFile 8844d43e--addons-pure-render-mixin-15-0-0 react-addons-pure-render-mixin@^15.0.0
+45 silly lockFile 8844d43e--addons-pure-render-mixin-15-0-0 react-addons-pure-render-mixin@^15.0.0
+46 silly resolved [ { name: 'react-addons-pure-render-mixin',
+46 silly resolved     version: '15.0.1',
+46 silly resolved     main: 'index.js',
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git+https://github.com/facebook/react.git' },
+46 silly resolved     keywords: [ 'react', 'react-addon' ],
+46 silly resolved     license: 'BSD-3-Clause',
+46 silly resolved     dependencies: {},
+46 silly resolved     peerDependencies: { react: '^15.0.1' },
+46 silly resolved     description: 'This package provides the React PureRenderMixin add-on.',
+46 silly resolved     bugs: { url: 'https://github.com/facebook/react/issues' },
+46 silly resolved     homepage: 'https://github.com/facebook/react#readme',
+46 silly resolved     _id: 'react-addons-pure-render-mixin@15.0.1',
+46 silly resolved     _shasum: 'fb106f4537e2803ca7cea2c55cac9f4a2dcb1f53',
+46 silly resolved     _resolved: 'https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.0.1.tgz',
+46 silly resolved     _from: 'react-addons-pure-render-mixin@^15.0.0',
+46 silly resolved     scripts: {},
+46 silly resolved     _npmVersion: '2.15.0',
+46 silly resolved     _nodeVersion: '4.4.2',
+46 silly resolved     _npmUser: { name: 'zpao', email: 'paul@oshannessy.com' },
+46 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: 'fb106f4537e2803ca7cea2c55cac9f4a2dcb1f53',
+46 silly resolved        tarball: 'https://registry.npmjs.org/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.0.1.tgz' },
+46 silly resolved     _npmOperationalInternal:
+46 silly resolved      { host: 'packages-12-west.internal.npmjs.com',
+46 silly resolved        tmp: 'tmp/react-addons-pure-render-mixin-15.0.1.tgz_1460139853605_0.6086815225426108' },
+46 silly resolved     directories: {} } ]
+47 info install react-addons-pure-render-mixin@15.0.1 into /Users/thehecht/Projects/publicador/meteor-app
+48 info installOne react-addons-pure-render-mixin@15.0.1
+49 verbose node_modules/react-addons-pure-render-mixin unbuild
+50 info preuninstall react-addons-pure-render-mixin@0.14.8
+51 info uninstall react-addons-pure-render-mixin@0.14.8
+52 verbose true,/Users/thehecht/Projects/publicador/meteor-app/node_modules,/Users/thehecht/Projects/publicador/meteor-app/node_modules unbuild react-addons-pure-render-mixin@0.14.8
+53 info postuninstall react-addons-pure-render-mixin@0.14.8
+54 verbose tar unpack /Users/thehecht/.npm/react-addons-pure-render-mixin/15.0.1/package.tgz
+55 silly lockFile e628e64d-s-react-addons-pure-render-mixin tar:///Users/thehecht/Projects/publicador/meteor-app/node_modules/react-addons-pure-render-mixin
+56 verbose lock tar:///Users/thehecht/Projects/publicador/meteor-app/node_modules/react-addons-pure-render-mixin /Users/thehecht/.npm/e628e64d-s-react-addons-pure-render-mixin.lock
+57 silly lockFile 602f52f2--render-mixin-15-0-1-package-tgz tar:///Users/thehecht/.npm/react-addons-pure-render-mixin/15.0.1/package.tgz
+58 verbose lock tar:///Users/thehecht/.npm/react-addons-pure-render-mixin/15.0.1/package.tgz /Users/thehecht/.npm/602f52f2--render-mixin-15-0-1-package-tgz.lock
+59 silly gunzTarPerm modes [ '755', '644' ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm extractEntry README.md
+62 silly gunzTarPerm extractEntry LICENSE
+63 silly gunzTarPerm extractEntry index.js
+64 silly gunzTarPerm extractEntry PATENTS
+65 silly lockFile e628e64d-s-react-addons-pure-render-mixin tar:///Users/thehecht/Projects/publicador/meteor-app/node_modules/react-addons-pure-render-mixin
+66 silly lockFile e628e64d-s-react-addons-pure-render-mixin tar:///Users/thehecht/Projects/publicador/meteor-app/node_modules/react-addons-pure-render-mixin
+67 silly lockFile 602f52f2--render-mixin-15-0-1-package-tgz tar:///Users/thehecht/.npm/react-addons-pure-render-mixin/15.0.1/package.tgz
+68 silly lockFile 602f52f2--render-mixin-15-0-1-package-tgz tar:///Users/thehecht/.npm/react-addons-pure-render-mixin/15.0.1/package.tgz
+69 info preinstall react-addons-pure-render-mixin@15.0.1
+70 verbose readDependencies using package.json deps
+71 verbose readDependencies using package.json deps
+72 silly resolved []
+73 verbose about to build /Users/thehecht/Projects/publicador/meteor-app/node_modules/react-addons-pure-render-mixin
+74 info build /Users/thehecht/Projects/publicador/meteor-app/node_modules/react-addons-pure-render-mixin
+75 verbose linkStuff [ false,
+75 verbose linkStuff   false,
+75 verbose linkStuff   false,
+75 verbose linkStuff   '/Users/thehecht/Projects/publicador/meteor-app/node_modules' ]
+76 info linkStuff react-addons-pure-render-mixin@15.0.1
+77 verbose linkBins react-addons-pure-render-mixin@15.0.1
+78 verbose linkMans react-addons-pure-render-mixin@15.0.1
+79 verbose rebuildBundles react-addons-pure-render-mixin@15.0.1
+80 info install react-addons-pure-render-mixin@15.0.1
+81 info postinstall react-addons-pure-render-mixin@15.0.1
+82 error peerinvalid The package react does not satisfy its siblings' peerDependencies requirements!
+82 error peerinvalid Peer react-addons-pure-render-mixin@15.0.1 wants react@^15.0.1
+82 error peerinvalid Peer react-dom@0.14.8 wants react@^0.14.8
+83 error System Darwin 14.5.0
+84 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "react-addons-pure-render-mixin@^15.0.0" "--save"
+85 error cwd /Users/thehecht/Projects/publicador/meteor-app
+86 error node -v v0.10.36
+87 error npm -v 1.4.28
+88 error code EPEERINVALID
+89 verbose exit [ 1, true ]
