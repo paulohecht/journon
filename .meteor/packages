@@ -28,3 +28,4 @@ fortawesome:fontawesome
 cfs:standard-packages
 cfs:filesystem
 momentjs:moment
+meteorhacks:fast-render

@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
+import { browserHistory } from 'react-router'
 import { createContainer } from 'meteor/react-meteor-data';
 
 import Notification from '../client/Notification.js';
@@ -10,8 +11,7 @@ import Post from './Post.jsx';
 import AccountsUIWrapper from './AccountsUIWrapper.jsx';
 import Navbar from './Navbar.jsx';
 
-// App component - represents the whole app
-class App extends Component {
+class Index extends Component {
 
   constructor(props) {
     super(props);
@@ -19,6 +19,18 @@ class App extends Component {
     this.state = {
       loading: false,
     };
+  }
+
+  componentWillMount() {
+    if (!this.props.user) {
+      browserHistory.push('/signin');
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (!this.props.user) {
+      browserHistory.push('/signin');
+    }
   }
 
   handleSubmit(event) {
@@ -55,7 +67,7 @@ class App extends Component {
     if (this.state.loading) {
       return (
         <i className="fa fa-spinner fa-spin fa-fw margin-bottom"></i>
-      );
+      )
     }
     return "Add"
   }
@@ -63,15 +75,36 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        {/* Views will be rendered here */}
-        {this.props.children}
+
+        <div className="container">
+          <div className="row">
+            <div className="col-md-3">
+            </div>
+            <div className="col-md-7">
+              <div className="well">
+                <form className="new-post" onSubmit={this.handleSubmit.bind(this)} >
+                  <div className="input-group input-group-lg">
+                    <input type="text" ref="textInput" className="form-control input-lg" placeholder="Type your article URL here..." disabled={this.state.loading} />
+                    <span className="input-group-btn">
+                      <button className="btn btn-default btn-lg" type="submit" ref="buttonInput" disabled={this.state.loading}>
+                        {this.renderButtonLabel()}
+                      </button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+              <ul className="media-list">
+                {this.renderPosts()}
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
 }
 
-App.propTypes = {
+Index.propTypes = {
   posts: PropTypes.array.isRequired,
   incompleteCount: PropTypes.number.isRequired,
 };
@@ -82,4 +115,4 @@ export default createContainer(() => {
     posts: Posts.find({}, { sort: { createdAt: -1 } }).fetch(),
     incompleteCount: Posts.find({ checked: { $ne: true } }).count(),
   };
-}, App);
+}, Index);

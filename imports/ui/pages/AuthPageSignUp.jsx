@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { createContainer } from 'meteor/react-meteor-data';
+import { browserHistory } from 'react-router';
 import { Avatars } from '../../api/avatars.js';
 import { Link } from 'react-router';
 
@@ -8,6 +10,17 @@ import Notification from '../../client/Notification.js'
 
 class AuthPageSignUp extends Component {
 
+  componentWillMount() {
+    if (this.props.user) {
+      browserHistory.push('/');
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.props.user) {
+      browserHistory.push('/');
+    }
+  }
 
   handleSubmit(event) {
     event.preventDefault();
@@ -77,8 +90,6 @@ class AuthPageSignUp extends Component {
     // <input type="file" onChange={this.handleFile.bind(this)} />
     return (
       <div>
-        <Navbar />
-
         <div className="container col-md-4 col-md-offset-4">
 
           <form className="form-signup" onSubmit={this.handleSubmit.bind(this)}>
@@ -112,4 +123,8 @@ class AuthPageSignUp extends Component {
   }
 }
 
-export default AuthPageSignUp;
+export default createContainer(() => {
+  return {
+    user: Meteor.user(),
+  };
+}, AuthPageSignUp);
